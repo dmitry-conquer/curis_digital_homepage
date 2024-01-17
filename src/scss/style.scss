@@ -1,5 +1,5 @@
-// @import '../../node_modules/swiper/swiper.scss';
-// @import '../../node_modules/swiper/modules/pagination/pagination.scss';
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/modules/pagination/pagination.scss';
 
 @import "./mixins";
 @import "fonts", "normalize", "functions";
@@ -19,6 +19,9 @@
 @import "sections/mission";
 @import "sections/solution";
 @import "sections/services";
+@import "sections/session";
+@import "sections/allinone";
+@import "sections/conclusion";
 
 body {
   font-weight: 400;

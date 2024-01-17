@@ -1,0 +1,126 @@
+.allinone {
+  padding-top: 81px;
+  padding-bottom: 90px;
+  background-color: #fff;
+  @include av("padding-top", 81, 45);
+  @include av("padding-bottom", 90, 55);
+  &__title {
+    @include av("font-size", 67, 40);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: em(50, 67);
+  }
+  &__video {
+    position: relative;
+  }
+  &__video-placeholder {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+  }
+  &__play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+    width: 175px;
+    height: 175px;
+    @media (max-width: 1024px) {
+      width: 90px;
+      height: 90px;
+    }
+    @media (max-width: 640px) {
+      width: 50px;
+      height: 50px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &__lists {
+    padding: 47px 80px 54px 80px;
+    background: linear-gradient(275deg, #261b97 0.79%, #913dc4 92.67%);
+    display: flex;
+    column-gap: 60px;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      row-gap: 23px;
+      padding: 35px 60px 35px 60px;
+    }
+    @media (max-width: 640px) {
+      padding: 35px 25px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 23px;
+  }
+}
+.item-allinone {
+  font-family: Roboto;
+  color: #fff;
+  display: flex;
+  column-gap: 14px;
+  align-items: flex-start;
+  &__icon {
+    margin-top: 5px;
+  }
+  &__title {
+    @include av("font-size", 27, 20);
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  &__text {
+    @include av("font-size", 20, 16);
+    line-height: 1.4;
+  }
+}
+
+.comments {
+  @include av("margin-top", 86, 40);
+  text-align: center;
+  &__title {
+    @include av("font-size", 50, 36);
+    text-transform: uppercase;
+    margin-bottom: em(26, 50);
+  }
+  &__slider {
+    overflow: hidden;
+    width: 100%;
+  }
+  &__slider-wrapper {
+    display: flex;
+    width: 100%;
+  }
+}
+
+.slide-comments {
+  flex-shrink: 0;
+  &__text {
+    color: #707070;
+    font-family: Roboto;
+    @include av("font-size", 25, 18);
+    line-height: 1.4;
+    margin-bottom: em(43, 25);
+  }
+  &__client {
+    font-family: Roboto;
+    @include av("font-size", 25, 18);
+    font-weight: 700;
+  }
+}
+.pagination {
+  margin-top: 20px;
+  .swiper-pagination-bullet {
+    width: 15px !important;
+    height: 15px !important;
+    background-color: #8c3bc2;
+  }
+}

@@ -19,6 +19,9 @@
     display: flex;
     justify-content: flex-start;
     padding-top: 0;
+    @media (max-width: 1024px) {
+       min-height: auto;
+    }
     @media (min-width: 1024px) {
       align-items: center;
     }
@@ -29,6 +32,11 @@
     z-index: 10;
     @media (max-width: 1024px) {
       padding-top: 100px;
+      padding-bottom: 120px;
+    }
+    @media (max-width: 640px) {
+      padding-top: 60px;
+      padding-bottom: 50px;
     }
   }
   &__title {
