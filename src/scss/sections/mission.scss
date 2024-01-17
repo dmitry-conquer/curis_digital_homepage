@@ -1,0 +1,33 @@
+.mission {
+  background-color: #fff;
+  text-align: center;
+  padding-top: 44px;
+  padding-bottom: 45px;
+  @media (max-width: 640px) {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  &__title {
+    @include av("font-size", 67, 40);
+    line-height: 0.8;
+    text-transform: uppercase;
+    margin-bottom: em(12, 67);
+  }
+  &__text {
+    color: #707070;
+    font-family: Roboto;
+    @include av("font-size", 30, 18);
+    font-weight: 300;
+    line-height: 1.16;
+    margin-bottom: 1em;
+  }
+  &__link-wrapper {
+    width: 222px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  &__link {
+    width: 100%;
+  }
+}

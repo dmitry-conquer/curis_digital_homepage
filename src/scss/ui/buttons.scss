@@ -1,0 +1,15 @@
+.primary-button {
+  border-radius: 50px;
+  background: linear-gradient(275deg, #3b28ff 0.79%, #b842ff 92.67%);
+  padding: 18px 28px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: Roboto;
+  @include av("font-size", 18, 16);
+  font-weight: 700;
+  line-height: 1.11;
+  @media (max-width: 640px) {
+    padding: 14px 20px;
+  }
+}

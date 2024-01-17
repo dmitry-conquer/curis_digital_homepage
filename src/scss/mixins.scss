@@ -1,0 +1,12 @@
+/* Adaptive value from -- to */
+@mixin av($property, $startSize, $minSize, $widthFrom: 1412, $widthTo: 320) {
+   $addSize: $startSize - $minSize;
+
+   #{$property}: calc(#{$minSize + px} + #{$addSize} * (100vw - #{$widthTo + px}) / #{($widthFrom) - ($widthTo)});
+
+   @media (min-width: ($widthFrom + px)) {
+      #{$property}: $startSize + px;
+   }
+}
+
+

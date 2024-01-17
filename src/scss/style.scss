@@ -1,0 +1,54 @@
+// @import '../../node_modules/swiper/swiper.scss';
+// @import '../../node_modules/swiper/modules/pagination/pagination.scss';
+
+@import "./mixins";
+@import "fonts", "normalize", "functions";
+
+/* typography */
+@import "typography/gradient-text";
+@import "typography/check-list";
+
+/* ui */
+@import "ui/buttons";
+
+/* sections */
+@import "sections/hero";
+@import "sections/schedule";
+@import "sections/strategies";
+@import "sections/founder";
+@import "sections/mission";
+@import "sections/solution";
+@import "sections/services";
+
+body {
+  font-weight: 400;
+}
+
+[class*="__container"] {
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: 1414px;
+}
+
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 100%;
+
+  main {
+    flex: 1 1 auto;
+  }
+}

@@ -1,0 +1,127 @@
+.strategies {
+  @include av("padding-top", 103, 40);
+  @include av("padding-bottom", 85, 25);
+
+  &__partners {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    column-gap: 60px;
+    row-gap: 30px;
+    @media (max-width: 640px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  &__partner {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+.header-strategies {
+  text-align: center;
+  &__subtitle {
+    color: #707070;
+    font-family: Roboto;
+    @include av("font-size", 32, 22);
+    font-weight: 500;
+    line-height: 1.13;
+  }
+  &__title {
+    text-align: center;
+    @include av("font-size", 67, 36);
+    line-height: 0.9;
+    text-transform: uppercase;
+    margin: 6px 0;
+  }
+  &__text {
+    color: #707070;
+    font-family: Roboto;
+    @include av("font-size", 20, 16);
+    line-height: 1.5; /* 150% */
+  }
+  &__columns {
+    margin-top: 34px;
+    display: flex;
+    gap: 32px;
+    @media (max-width: 1024px) {
+      flex-direction: column;
+    }
+  }
+}
+.strategies-column {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 42px;
+  flex: 1 1 100%;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  @media (max-width: 640px) {
+    flex-direction: column;
+    padding: 18px;
+    gap: 15px;
+  }
+  &__text {
+    width: 50%;
+    color: #fff;
+    font-family: Roboto;
+    @include av("font-size", 25, 20);
+    line-height: 1.2;
+    span {
+      font-family: Rozha One;
+      font-size: 35px;
+      @include av("font-size", 35, 24);
+      line-height: 1;
+    }
+  }
+  &__image {
+    width: 50%;
+    height: 100%;
+  }
+}
+.body-strategies {
+  @include av("margin-top", 127, 40);
+  @include av("margin-bottom", 78, 25);
+  display: flex;
+  @include av("gap", 90, 20);
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+  &__image {
+    width: 50%;
+    height: 100%;
+    @media (max-width: 1024px) {
+      width: 80%;
+      margin: 0 auto;
+    }
+    @media (max-width: 640px) {
+      width: 100%;
+    }
+  }
+  &__content {
+    width: 50%;
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+  }
+  &__title {
+    @include av("font-size", 50, 32);
+    line-height: 1;
+    margin-bottom: em(14, 50);
+  }
+  &__strong-text {
+    color: #261b97;
+    font-family: Roboto;
+    @include av("font-size", 25, 18);
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: em(20, 25);
+  }
+  &__text {
+    color: #707070;
+    @include av("font-size", 20, 16);
+    line-height: 1.5;
+  }
+}

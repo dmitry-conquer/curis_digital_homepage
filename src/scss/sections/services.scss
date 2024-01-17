@@ -1,0 +1,36 @@
+.services {
+  background-color: #fff;
+  text-align: center;
+  @include av("padding-top", 98, 40);
+  @include av("padding-bottom", 110, 50);
+  &__title {
+    @include av("font-size", 50, 36);
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+  &__text {
+    color: #707070;
+    font-family: Roboto;
+    @include av("font-size", 32, 24);
+    line-height: 1.4;
+  }
+  &__images {
+    margin-top: 38px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 80px;
+    row-gap: 40px;
+    grid-auto-rows: 80px;
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 640px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}

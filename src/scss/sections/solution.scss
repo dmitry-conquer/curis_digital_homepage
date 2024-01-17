@@ -1,0 +1,126 @@
+.solution {
+  background-color: #261b97;
+  position: relative;
+  overflow: hidden;
+  @include av("padding-top", 132, 40);
+  @include av("padding-bottom", 136, 40);
+  &__decoration {
+    position: absolute;
+    right: -20px;
+    top: -20px;
+  }
+  &__grid {
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 6px;
+    @media (max-width: 1060px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+    }
+    @media (max-width: 875px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 640px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__item-wrapper {
+    border-radius: 15px;
+    background: rgba(247, 236, 255, 0.3);
+    padding: 16px;
+  }
+  &__item {
+    width: 100%;
+    height: 100%;
+    &:nth-child(1) {
+      grid-column: 1 / span 2;
+    }
+    &_link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 640px) {
+        margin: 30px 0 60px 0;
+      }
+    }
+    @media (max-width: 640px) {
+      &:nth-child(1) {
+        grid-column: auto;
+      }
+    }
+  }
+  &__title {
+    color: #fff;
+    font-family: Rozha One;
+    @include av("font-size", 67, 40);
+    line-height: 1;
+    max-width: 420px;
+    @media (max-width: 875px) {
+      margin-bottom: 30px;
+      max-width: 100%;
+    }
+  }
+  &__link {
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 1;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      width: 73px;
+      height: 7px;
+      bottom: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: radial-gradient(
+        124.76% 190.45% at -34.26% 5.95%,
+        #0089ff 20%,
+        #2379fe 22%,
+        #5c5efc 26%,
+        #8e48fb 29%,
+        #b635fa 32%,
+        #d627f9 35%,
+        #ec1df9 38%,
+        #fa17f9 41%,
+        #ff15f9 44%,
+        #f319f9 46%,
+        #9e39fb 61%,
+        #5a52fc 75%,
+        #2964fe 86%,
+        #0b6ffe 95%,
+        #0074ff 100%
+      );
+    }
+  }
+}
+.solution-box {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 55px 30px 57px 30px;
+  border-radius: 15px;
+  &__image {
+  }
+  &__title {
+    color: #01162f;
+    text-align: center;
+    font-family: Rozha One;
+    @include av("font-size", 28, 24);
+    line-height: 1;
+    margin-top: em(33, 28);
+  }
+  @media (max-width: 640px) {
+    padding: 25px 20px 27px 20px;
+  }
+}
