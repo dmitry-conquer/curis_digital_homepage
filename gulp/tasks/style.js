@@ -11,7 +11,7 @@ export const style = () => {
    const plugins = [
       autoprefixer({ grid: true, overrideBrowserslist: 'last 2 versions' }),
       cssnano(),
-      combineMediaQueries(),
+      // combineMediaQueries(),
    ];
 
    return app.gulp

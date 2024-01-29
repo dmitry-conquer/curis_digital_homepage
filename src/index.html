@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="uk">
   @@include('template-parts/head.html', { 'title': 'Головна' })
-  <body>
+  <body class="page-template-home-page-curis-digital">
     <div class="wrapper">
       @@include('template-parts/header.html', { })
-      <main>
+      <!-- <main>
         <section class="hero" style="background-image: url('./img/hero.webp')">
           <div class="hero__container">
             <div class="hero__content">
@@ -54,11 +54,15 @@
               </div>
             </div>
             <div class="strategies__body body-strategies">
-              <img
-                src="./img/group-image.webp"
-                alt="As a leading home care 
-              marketing agency"
-                class="body-strategies__image" />
+              <div class="anim-image">
+                <img src="./img/parts/main.webp" alt="" class="anim-image__main" />
+                <img src="./img/parts/insta.svg" alt="image" class="anim-image__part anim-image__part_1" />
+                <img src="./img/parts/g2.svg" alt="image" class="anim-image__part anim-image__part_6" />
+                <img src="./img/parts/newapp.svg" alt="image" class="anim-image__part anim-image__part_2" />
+                <img src="./img/parts/fb.svg" alt="image" class="anim-image__part anim-image__part_4" />
+                <img src="./img/parts/newapplead.svg" alt="image" class="anim-image__part anim-image__part_5" />
+                <img src="./img/parts/g1.svg" alt="image" class="anim-image__part anim-image__part_3" />
+              </div>
               <div class="body-strategies__content">
                 <h2 class="body-strategies__title gradient-text">As a leading home care marketing agency</h2>
                 <p class="body-strategies__strong-text">dedicated to home care industry, Curis Digital offers top-notch marketing strategies at budget-friendly rates.</p>
@@ -69,10 +73,11 @@
               </div>
             </div>
             <div class="strategies__partners">
-              <img src="./img/partner1.webp" alt="partner1" class="strategies__partner" />
-              <img src="./img/partner2.webp" alt="partner2" class="strategies__partner" />
-              <img src="./img/partner3.webp" alt="partner3" class="strategies__partner" />
-              <img src="./img/partner4.webp" alt="partner4" class="strategies__partner" />
+              <div class="strategies__partner"><img src="./img/partner1.webp" alt="partner1" class="" /></div>
+              <div class="strategies__partner"><img src="./img/partner2.webp" alt="partner2" class="" /></div>
+              <div class="strategies__partner"><img src="./img/partner3.webp" alt="partner3" class="" /></div>
+              <div class="strategies__partner"><img src="./img/partner5.webp" alt="partner4" class="" /></div>
+              <div class="strategies__partner"><img src="./img/partner4.webp" alt="partner4" class="" /></div>
             </div>
           </div>
         </section>
@@ -83,11 +88,11 @@
           <div class="founder__container">
             <div class="founder__header">
               <div class="founder__quote">
-                <p>
+                <p class="founder__quote-text">
                   "Accelerate the growth of your home care agency with the essential tool for success. Elevate engagement and drive profits through our powerful All-in-One
                   Platform."
                 </p>
-                <q>I'm sorry, Dave. I'm afraid I can't do that. </q>
+                <p class="founder__quote-author">- Denis Sinelnikov, Founder & CEO</p>
               </div>
               <div class="founder__avatar">
                 <img src="./img/avatar.webp" alt="Denis Sinelnikov, Founder & CEO" />
@@ -403,7 +408,7 @@
           <div class="comments">
             <div class="comments__container">
               <h2 class="comments__title gradient-text">What Our Clients Say</h2>
-              <div class="comments__slider swiper-slider">
+              <div data-delay="6000" class="comments__slider swiper-slider">
                 <div class="comments__slider-wrapper swiper-wrapper">
                   <article class="comments__slider-slide slide-comments swiper-slide">
                     <p class="slide-comments__text">
@@ -485,7 +490,7 @@
             </div>
           </div>
         </section>
-      </main>
+      </main> -->
       @@include('template-parts/footer.html', { })
     </div>
     <script type="module" crossorigin src="./js/app.min.js"></script>
